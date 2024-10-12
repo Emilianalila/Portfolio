@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "./navbar.css"
 import { ThemeContext } from "../context/context";
 
 type Props = {
@@ -7,17 +6,19 @@ type Props = {
 }
 
 const Navbar = ({handleThemeChange}: Props) => {
-  const theme= useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
   console.log("change theme" ,  theme)
 
   return (
-    <div className="navbar-container">
+    <div className="fixed w-full bg-red-700 top-0">
       <div>
         <a href="#about">logo</a>
       </div>
-      <li>
-
-      </li>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+      </ul>
      <button onClick={handleThemeChange}>Button</button>
     </div>
   )
