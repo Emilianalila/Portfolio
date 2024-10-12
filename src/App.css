@@ -53,3 +53,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+section{
+  @apply min-h-[100vh] pt-[7vh]
+}
