@@ -10,16 +10,16 @@ const Navbar = ({handleThemeChange}: Props) => {
   console.log("change theme" ,  theme)
 
   return (
-    <div className="fixed w-full bg-red-700 top-0">
-      <div>
-        <a href="#about">logo</a>
-      </div>
-      <ul>
+    <div className="fixed w-full top-0 bg-blue-100 ">
+      <div className="flex justify-between max-w-[80vw] mx-auto items-center min-h-[5vw]">
+        <a href="#about" className="flex text-2xl font-semibold">logo</a>
+      <ul className="flex gap-20">
         <li>Home</li>
         <li>About</li>
         <li>Projects</li>
       </ul>
      <button onClick={handleThemeChange}>Button</button>
+     </div>
     </div>
   )
 }
