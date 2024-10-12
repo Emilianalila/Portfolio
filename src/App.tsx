@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import { ThemeContext } from './context/context'
 import './index.css'
-import { Home } from './views/Home'
+import Home from './views/home/Home'
 import About from './views/About'
 import Projects from './views/Projects'
 
@@ -22,7 +22,7 @@ function App() {
     <ThemeContext.Provider value={theme}>
 
       <Navbar  handleThemeChange = {handleThemeChange} />
-      <Home/>
+      <Home />
       <About/>
       <Projects/>
         
