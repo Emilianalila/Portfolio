@@ -4,6 +4,12 @@ export const theme = {
   extend: {
     backgroundColor:{
       'primary':'var(--background-color-primary)'
+    },
+    backgroundImage:{
+      'images': 'var(--background-image)'
+    },
+    width:{
+      '700': '700px'
     }
   },
 };

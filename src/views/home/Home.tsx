@@ -1,10 +1,16 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context/context";
+
+
 const Home = () => {
+  const theme= useContext(ThemeContext)
+
   return (
-    <section id="home" className="theme-light">
-      <div className="wrapper flex ">
-        <main>
+    <section id="home" className= {`${theme} bg-images bg-cover bg-no-repeat bg-center`}>
+      <div className="wrapper flex items-center justify-center">
+        <main className="w-1/2 p-5">
           <h1 className="text-7xl text-blue-800">Hi, I am Emiliana</h1>
-          <h2 className="text-5xl text-blue-400">Full-Stack developer</h2>
+          <h2 className="text-5xl">Full-Stack developer</h2>
           <p className="text-2xl text-blue-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro mollitia dignissimos tempore tempora necessitatibus qui. Repudiandae consequatur soluta magni et repellat illo eos nisi libero. Autem nihil atque repellendus? Cupiditate.</p>
           <div className="flex"> 
             <a href="https://github.com/Emilianalila" target="_blank"><img src="./src/assets/github.svg" className="w-10 h-auto" alt="github-icom" /></a>
@@ -13,8 +19,8 @@ const Home = () => {
           </div>
           <a href="./src/assets/Emiliana.resume.pdf" target="_blank">Resume</a>
         </main>
-        <aside >
-         <img src="./src/assets/webdev.svg" alt="Developer" />
+        <aside className="w-1/2 p-5">
+         <img src="./src/assets/webdev.svg" className="w-700 h-auto" alt="Developer" />
         </aside>
       </div>
     </section>
